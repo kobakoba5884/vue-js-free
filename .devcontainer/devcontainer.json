@@ -1,0 +1,26 @@
+{
+    "name": "vue-js-workspace",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "workspace",
+    "workspaceFolder": "/home/vscode/workspace",
+    "remoteUser": "vscode",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "files.eol": "\n"
+        },
+        "postCreateCommand": "./setup-git.sh",
+        "extensions": [
+          "streetsidesoftware.code-spell-checker",
+          "oderwat.indent-rainbow",
+          "GitHub.vscode-pull-request-github",
+          "redhat.vscode-xml",
+          "esbenp.prettier-vscode",
+          "Swellaby.node-pack",
+          "Vue.volar"
+        ]
+      }
+    }
+  }
+  
